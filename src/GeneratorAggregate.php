@@ -12,28 +12,32 @@ namespace JLSalinas\RWGen;
  * storing its returned value in a static variable. Second and subsequent calls use the static variable
  * instead of calling getGenerator() again. See trait GeneratorAggregateHack.
  */
-interface GeneratorAggregate {
-    public function getGenerator ();
-    public function send ($value);
+interface GeneratorAggregate
+{
+    public function getGenerator();
+    public function send($value);
 }
 
-trait GeneratorAggregateHack {
-    public function send ($value) {
+trait GeneratorAggregateHack
+{
+    public function send($value)
+    {
         static $generator = null;
         
-        if ( $generator === null ) {
-            if ( $value === null ) {
+        if ($generator === null) {
+            if ($value === null) {
                 return;
             }
             $generator = $this->getGenerator();
         }
         $generator->send($value);
-        if ( $value === null ) {
+        if ($value === null) {
             $generator = null;
         }
     }
     
-    function __destruct() {
+    function __destruct()
+    {
         $this->send(null);
     }
 }

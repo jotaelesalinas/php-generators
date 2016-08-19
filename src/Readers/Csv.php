@@ -3,7 +3,8 @@ namespace JLSalinas\RWGen\Readers;
 
 use JLSalinas\RWGen\Reader;
 
-class Csv extends Reader {
+class Csv extends Reader
+{
     public static $default_options = array (
         'with_headers' => true,
         'separator' => ',',
@@ -14,45 +15,49 @@ class Csv extends Reader {
     
     private $inputfile = false;
     
-    public function __construct ($inputfile, $options = array()) {
+    public function __construct($inputfile, $options = array())
+    {
         ini_set("auto_detect_line_endings", true);
         $this->inputfile = $inputfile;
         $this->setOptions($options);
         
-        if ( (!is_resource($this->inputfile)) && (!file_exists($this->inputfile)) ) {
+        if ((!is_resource($this->inputfile)) && (!file_exists($this->inputfile))) {
             throw new \Exception('Input file does not exist: ' . $this->inputfile);
         }
     }
     
-    private static function isEmptyArray ($array) {
+    private static function isEmptyArray($array)
+    {
         return count($array) == 1 && ( $array[0] === null || trim($array[0]) === '' );
     }
     
-    protected function inputGenerator () {
+    protected function inputGenerator()
+    {
         return $this->getLines();
     }
     
-    private function getLines () {
+    private function getLines()
+    {
         $fh = is_resource($this->inputfile) ? $this->inputfile : @fopen($this->inputfile, 'r');
-        if ( !$fh ) {
+        if (!$fh) {
             throw new \Exception('Could not open input file ' . $this->inputfile);
         }
         
         $headers = false;
-        while ( !feof($fh) ) {
-            if ( $headers === false && $this->getOption('with_headers') ) {
+        while (!feof($fh)) {
+            if ($headers === false && $this->getOption('with_headers')) {
                 $headers = fgetcsv($fh, 0, $this->getOption('separator'), $this->getOption('delimiter'), $this->getOption('escape'));
-                if ( self::isEmptyArray($headers) ) {
-                    if ( feof($fh) ) {
+                if (self::isEmptyArray($headers)) {
+                    if (feof($fh)) {
                         break;
                     }
                     throw new \Exception('Empty headers line in file ' . $this->inputfile);
                 }
             }
             
-            $row = fgetcsv ($fh, 0, $this->getOption('separator'), $this->getOption('delimiter'), $this->getOption('escape'));
-            if ( self::isEmptyArray($row) ) {
-                if ( $this->getOption('stop_on_blank') ) {
+            $row = fgetcsv($fh, 0, $this->getOption('separator'), $this->getOption('delimiter'), $this->getOption('escape'));
+            if (self::isEmptyArray($row)) {
+                if ($this->getOption('stop_on_blank')) {
                     break;
                 }
                 continue;

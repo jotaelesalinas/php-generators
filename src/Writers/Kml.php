@@ -11,25 +11,28 @@ use JLSalinas\RWGen;
 // - add option with the default icon
 // - add parameter with closure to generate Placemark from row
 
-class Kml extends Writer {
+class Kml extends Writer
+{
     public static $defaults = array (
         'overwrite' => false,
     );
     
     private $outputfile = false;
     
-    public function __construct ($outputfile, $options = array()) {
+    public function __construct($outputfile, $options = array())
+    {
         $this->outputfile = $outputfile;
         $this->setOptions($options);
         
-        if ( !$this->getOption('overwrite') ) {
-            if ( file_exists($outputfile) ) {
+        if (!$this->getOption('overwrite')) {
+            if (file_exists($outputfile)) {
                 throw new \Exception('Output file already exists: ' . $this->outputfile);
             }
         }
     }
     
-    protected function outputGenerator () {
+    protected function outputGenerator()
+    {
         // Creates the Document.
         $dom = new DOMDocument('1.0', 'UTF-8');
 
@@ -56,7 +59,7 @@ class Kml extends Writer {
         do {
             $row = yield;
             
-            if ( $row === null ) {
+            if ($row === null) {
                 break;
             }
             
@@ -66,14 +69,14 @@ class Kml extends Writer {
             $placeNode = $docNode->appendChild($node);
 
             // Creates an id attribute and assign it the value of id column.
-            $placeNode->setAttribute( 'id', 'placemark' . (isset($row['id']) ? $row['id'] : $row[ key($row) ]) );
+            $placeNode->setAttribute('id', 'placemark' . (isset($row['id']) ? $row['id'] : $row[ key($row) ]));
             
             // Create name, and description elements and assigns them the values of the name and address columns from the results.
-            if ( isset($row['name']) ) {
-                $nameNode = $dom->createElement('name',htmlentities($row['name']));
+            if (isset($row['name'])) {
+                $nameNode = $dom->createElement('name', htmlentities($row['name']));
                 $placeNode->appendChild($nameNode);
             }
-            if ( isset($row['description']) ) {
+            if (isset($row['description'])) {
                 $descNode = $dom->createElement('description', $row['description']);
                 $placeNode->appendChild($descNode);
             }
@@ -88,7 +91,7 @@ class Kml extends Writer {
             $coorStr = $row['lng'] . ','  . $row['lat'];
             $coorNode = $dom->createElement('coordinates', $coorStr);
             $pointNode->appendChild($coorNode);
-        } while ( $row !== null );
+        } while ($row !== null);
 
         $kmlOutput = $dom->saveXML();
         file_put_contents($this->outputfile, $kmlOutput);
