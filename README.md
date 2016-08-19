@@ -28,9 +28,11 @@ $ composer require jotaelesalinas/php-rwgen
 ## Usage
 
 ```php
-$input = new JLS\Reader\Csv($filename_customers);
-$output_csv = new JLS\Writer\Csv($filename_output . '.csv');
-$output_kml = new JLS\Writer\Kml($filename_output . '.kml');
+$input = new JLSalinas\RWGen\Readers\Csv($filename_customers);
+
+$output_csv = new JLSalinas\RWGen\Writers\Csv($filename_output . '.csv');
+$output_kml = new JLSalinas\RWGen\Writers\Kml($filename_output . '.kml');
+
 foreach ( $input as $customer ) {
     // ...some filtering and transforming...
     $output_csv->send($customer_data);
@@ -62,15 +64,15 @@ If you discover any security related issues, please email DM [@jotaelesalinas](h
 
 ## To do
 
-- [x] Add destructor to Writer and `$this->send(null);` on termination
-- [ ] Adhere to PSR-2
 - [ ] Add to packagist
 - [ ] Improve tests code coverage
 - [ ] Test using it in another project
 - [ ] Add docblocks
 - [ ] Update changelog
 - [ ] Travis-CI. WTF?
-- [ ] Update .gitattributes and .gitignore
+- [x] Update .gitattributes and .gitignore
+- [x] Add destructor to Writer and `$this->send(null);` on termination
+- [x] Adhere to PSR-2
 
 ## Credits
 

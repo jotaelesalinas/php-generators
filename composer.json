@@ -49,7 +49,7 @@
     },
     "scripts": {
         "test": "phpunit",
-        "format": "phpcbf --standard=psr2 src/"
+        "format": "phpcbf --standard=psr2 --no-patch src/"
     },
     "extra": {
         "branch-alias": {
