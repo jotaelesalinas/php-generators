@@ -1,13 +1,15 @@
 # Implementing your own `Reader` and `Writer`
 
-In order to be able to use this library, you have to extend the classes `Reader` and `Writer`, providing your own implementation.
+If you want to use this library, you will most probably have to extend the classes `Reader` and `Writer`,
+providing your own implementations.
 
 There is currently one `Reader` implementation in the library, `Csv`, and two `Writer` implementations, `Csv` and `Kml`.
-Have a look at the [source code](/src/JLSalinas/RWGen) to see the details of the implementations.
+Have a look at the [source code](/src) to see the details of the implementations.
 
 ## Extending the class `Reader`
 
 Let's create a fake `Reader` that retrieves information from an external API that doesn't allow batch requests.
+Or maybe it does, but will still want to access the results from a foreach loop.
 
 These are the basic steps that we have to take:
 
@@ -79,8 +81,22 @@ with no arguments that connects and retrieves data as many times as needed
         }
     ```
 
-    Since this function cannot accept arguments, the way to pass data to it is via the constructor and private attributes.
+    Since this function cannot accept arguments, the way to pass data to it is via the constructor's arguments and class/instance attributes.
     That's why the list of IDs and options were passed to the constructor and stored to be used here.
+    
+    If the hypotetical API allowed us to retrieve all the data at once, the process would be:
+    
+    - Constructor:
+        - Accept credentials
+    - Preparation:
+        - Login to external webservice
+        - Retrieve all data at once
+        - Save data to a temporary file
+        - Disconnect from the external service
+    - Repeat
+        - Iterate over the temporary file -with a nested JLSalinas\RWGen\Reader, like Csv
+    - Clean-up
+        - Delete temporary file
 
 5. Define a method named `inputGenerator` that returns the generator method
 
@@ -90,11 +106,13 @@ with no arguments that connects and retrieves data as many times as needed
         }
     ```
 
-    This could seem a little bit superfluous but it's useful when there are lots of private helper methods in the class.
+    This could seem a little bit superfluous -all the code of getData() could be place in inputGenerator() instead-
+    but it's useful to keep the real code separated, especially when there are lots of private helper methods in the class.
 
 ## Extending the class `Writer`
 
-Let's create a fake `Writer` that logs data to a file.
+Let's create a fake `Writer` that logs data to a file. It is just an educational example. Please, creators and adopters of
+[PSR-3](http://www.php-fig.org/psr/psr-3/), have mercy on us.
 
 These are the basic steps that we have to take:
 
@@ -103,20 +121,20 @@ These are the basic steps that we have to take:
     ```php
     use JLSalinas\RWGen\Writer;
 
-    define('LOGGER_INFO',    0);
-    define('LOGGER_WARNING', 1);
-    define('LOGGER_ERROR',   2);
-
-    class Logger extends Writer {
+    class SimpleLogger extends Writer {
     }
     ```
 
 2. Provide some constants and default options (see trait `WithOptions` for more information):
 
     ```php
+        const LEVEL_INFO    = 0;
+        const LEVEL_WARNING = 1;
+        const LEVEL_ERROR   = 2;
+
         public static $default_options = array (
             'overwrite' => false,
-            'min_level' => LOGGER_WARNING
+            'min_level' => static::LOGGER_WARNING
         );
     ```
 
