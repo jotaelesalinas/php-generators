@@ -62,11 +62,10 @@ If you discover any security related issues, please email DM [@jotaelesalinas](h
 
 ## To do
 
-- [ ] Add destructor to Writer and `$this->send(null);` on termination
+- [x] Add destructor to Writer and `$this->send(null);` on termination
 - [ ] Adhere to PSR-2
 - [ ] Add to packagist
-- [ ] Better unit tests
-- [ ] Unit tests for Writer\Csv and Writer\Kml
+- [ ] Improve tests code coverage
 - [ ] Test using it in another project
 - [ ] Add docblocks
 - [ ] Update changelog
