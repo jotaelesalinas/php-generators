@@ -51,7 +51,8 @@
     },
     "scripts": {
         "test": "phpunit",
-        "format": "phpcbf --standard=psr2 --no-patch src/",
+        "format": "phpcbf --standard=psr2 src/",
+        "format-win": "phpcbf --standard=psr2 --no-patch src/",
         "smells": "phpcs --standard=psr2 src/"
     },
     "extra": {
