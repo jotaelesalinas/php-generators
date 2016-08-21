@@ -8,7 +8,7 @@ namespace JLSalinas\RWGen;
  *
  * Of course, they can implement many other helper methods as needed.
  */
-abstract class Writer extends Generator implements GeneratorAggregate
+abstract class Writer implements GeneratorAggregate
 {
     use GeneratorAggregateHack;
     use WithOptions;
