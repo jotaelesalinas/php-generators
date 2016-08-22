@@ -7,7 +7,7 @@ class Console extends Writer
 {
     protected function outputGenerator()
     {
-        while ( ($data = yield) !== null ) {
+        while (($data = yield) !== null) {
             print_r($data);
         }
     }
