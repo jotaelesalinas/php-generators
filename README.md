@@ -65,11 +65,11 @@ If you discover any security related issues, please email DM [@jotaelesalinas](h
 ## To do
 
 - [ ] Improve tests code coverage
-- [ ] Test using it in another project
 - [ ] Add docblocks
-- [ ] Update changelog
+- [ ] Fill changelog
 - [ ] Travis-CI. WTF?
-- [ ] Set up autoupdates in packagist
+- [x] Set up autoupdates in packagist
+- [x] Test using it in another project
 - [x] Add to packagist
 - [x] Update .gitattributes and .gitignore
 - [x] Add destructor to Writer and `$this->send(null);` on termination
