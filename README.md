@@ -68,12 +68,7 @@ If you discover any security related issues, please email DM [@jotaelesalinas](h
 - [ ] Add docblocks
 - [ ] Fill changelog
 - [ ] Travis-CI. WTF?
-- [x] Set up autoupdates in packagist
-- [x] Test using it in another project
-- [x] Add to packagist
-- [x] Update .gitattributes and .gitignore
-- [x] Add destructor to Writer and `$this->send(null);` on termination
-- [x] Adhere to PSR-2
+- [ ] Use league/csv?
 
 ## Credits
 
