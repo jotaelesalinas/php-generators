@@ -13,7 +13,7 @@ use JLSalinas\RWGen\Writer;
 
 class Kml extends Writer
 {
-    public static $defaults = array (
+    public static $default_options = array (
         'overwrite' => false,
     );
     

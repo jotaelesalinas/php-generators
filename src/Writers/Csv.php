@@ -24,7 +24,7 @@ if (!function_exists('str_putcsv')) {
 
 class Csv extends Writer
 {
-    public static $defaults = array (
+    public static $default_options = array (
         'overwrite' => false,
         'with_headers' => true,
         'separator' => ',',
