@@ -1,7 +1,7 @@
 <?php
 namespace JLSalinas\RWGen\Writers;
 
-use JLSalinas\RWGen;
+use JLSalinas\RWGen\Writer;
 
 /*
  * Very basic KML file generator. For demonstration purposes.

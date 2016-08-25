@@ -1,7 +1,7 @@
 <?php
 namespace JLSalinas\RWGen\Writers;
 
-use JLSalinas\RWGen;
+use JLSalinas\RWGen\Writer;
 
 // https://gist.github.com/johanmeiring/2894568
 if (!function_exists('str_putcsv')) {
