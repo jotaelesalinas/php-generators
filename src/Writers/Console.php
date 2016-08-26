@@ -9,32 +9,41 @@ class Console extends Writer
     const PRINTR  = 1;
     const VARDUMP = 2;
     
-    protected function outputGenerator($transform = self::JSON)
+    protected $transform = null;
+    
+    public function __construct($transform = self::JSON)
     {
         if (!is_callable($transform)) {
             switch ($transform) {
                 case self::PRINTR:
-                    $transform = function ($item) {
+                    $this->transform = function ($item) {
                         print_r($item);
                     };
                     break;
                 case self::VARDUMP:
-                    $transform = function ($item) {
+                    $this->transform = function ($item) {
                         var_dump($item);
                     };
                     break;
                 case self::JSON:
                 default:
-                    $transform = function ($item) {
+                    $this->transform = function ($item) {
                         return json_encode($item) . "\n";
                     };
                     break;
             }
+        } else {
+            $this->transform = $transform;
         }
+    }
+    
+    protected function outputGenerator()
+    {
+        $transform = $this->transform;
         while (($data = yield) !== null) {
-            $trans = $transform($data);
-            if (is_string($trans)) {
-                echo $trans;
+            $transormed = $transform($data);
+            if (is_string($transormed)) {
+                echo $transormed;
             }
         }
     }
