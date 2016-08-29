@@ -34,7 +34,7 @@ class Kml extends Writer
     protected function outputGenerator()
     {
         // Creates the Document.
-        $dom = new DOMDocument('1.0', 'UTF-8');
+        $dom = new \DOMDocument('1.0', 'UTF-8');
 
         // Creates the root KML element and appends it to the root document.
         $node = $dom->createElementNS('http://earth.google.com/kml/2.1', 'kml');
