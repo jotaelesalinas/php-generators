@@ -3,13 +3,12 @@ namespace JLSalinas\RWGen\Writers;
 
 use JLSalinas\RWGen\Writer;
 
-class Console extends Writer
+class ConsoleJson extends Writer
 {
     protected function outputGenerator()
     {
         while (($data = yield) !== null) {
-            print_r($data);
-            echo PHP_EOL;
+            echo json_encode($data) . PHP_EOL;
         }
     }
 }
