@@ -6,7 +6,11 @@ use JLSalinas\RWGen\Writer;
 class HtmlTable extends Writer {
     public static $default_options = array (
         'overwrite' => false,
-        'transformer' => null,  // a function that accepts the key and the value of the item to write
+        // a function that accepts the key and the value of the item to write and returns what to output (correctly escaped)
+        'transform' => function ($k, $v) { return htmlentities($v); },
+        'border' => '1',
+        'padding' => '4',
+        'spacing' => '0',
     );
     
     private $outputfile = null;
@@ -28,7 +32,12 @@ class HtmlTable extends Writer {
             throw new \Exception('Could not open output file: ' . $this->outputfile);
         }
 
-        fwrite($fh, '<table border="1">' . "\n");
+        $func = $this->getOption('transform');
+        fwrite($fh, '<table ' .
+            'border="' . $this->getOption('border') . '" ' .
+            'cellpadding="' . $this->getOption('padding') . '" ' .
+            'cellspacing="' . $this->getOption('spacing') . '" ' .
+            '>' . "\n");
         
         // repeat
 
@@ -49,7 +58,7 @@ class HtmlTable extends Writer {
             $lines = [];
             $lines[] = '<tr>';
             foreach ($data as $k => $v) {
-            	$lines[] = '<td>' . ( $k != 'picture_url' ? htmlentities($v) : ($v ? '<img src="' . htmlentities($v) . '" />' : '')) . '</td>';
+            	$lines[] = '<td>' . $func($k, $v) . '</td>';
             }
             $lines[] = '</tr>';
             fwrite($fh, implode("\n", $lines) . "\n");
