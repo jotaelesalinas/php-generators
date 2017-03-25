@@ -4,14 +4,14 @@ namespace JLSalinas\RWGen\Writers;
 use JLSalinas\RWGen\Writer;
 
 class HtmlTable extends Writer {
-    public static $default_options = array (
+    public static $default_options = [
         'overwrite' => false,
         // a function that accepts the key and the value of the item to write and returns what to output (correctly escaped)
-        'transform' => function ($k, $v) { return htmlentities($v); },
+        'transform' => false,
         'border' => '1',
         'padding' => '4',
         'spacing' => '0',
-    );
+    ];
     
     private $outputfile = null;
     
@@ -27,12 +27,13 @@ class HtmlTable extends Writer {
     private function saveLines () {
         // prepare
 
+        $func = $this->getOption('transform') ? $this->getOption('transform') : function ($k, $v) { return htmlentities($v); };
+        
         $fh = fopen($this->outputfile, 'w');
         if ( !$fh ) {
             throw new \Exception('Could not open output file: ' . $this->outputfile);
         }
 
-        $func = $this->getOption('transform');
         fwrite($fh, '<table ' .
             'border="' . $this->getOption('border') . '" ' .
             'cellpadding="' . $this->getOption('padding') . '" ' .
@@ -49,7 +50,7 @@ class HtmlTable extends Writer {
                 $lines = [];
                 $lines[] = '<tr>';
                 foreach (array_keys($data) as $k) {
-                    $lines[] = '<th>' . htmlentities($k) . '</th>';
+                    $lines[] = "\t" . '<th>' . htmlentities($k) . '</th>';
                 }
                 $lines[] = '</tr>';
                 fwrite($fh, implode("\n", $lines) . "\n");
@@ -58,7 +59,7 @@ class HtmlTable extends Writer {
             $lines = [];
             $lines[] = '<tr>';
             foreach ($data as $k => $v) {
-            	$lines[] = '<td>' . $func($k, $v) . '</td>';
+            	$lines[] = "\t" . '<td>' . $func($k, $v) . '</td>';
             }
             $lines[] = '</tr>';
             fwrite($fh, implode("\n", $lines) . "\n");
