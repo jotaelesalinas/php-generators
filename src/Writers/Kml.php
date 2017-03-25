@@ -4,7 +4,12 @@ namespace JLSalinas\RWGen\Writers;
 use JLSalinas\RWGen\Writer;
 
 /*
- * Very basic KML file generator. For demonstration purposes.
+ * Very basic KML file generator.
+ * Accepts arrays with these keys:
+ *  - id (optional)
+ *  - name
+ *  - description
+ *  - lng and lat
  */
  
 // TODO
