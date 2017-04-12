@@ -3,7 +3,8 @@ namespace JLSalinas\RWGen\Writers;
 
 use JLSalinas\RWGen\Writer;
 
-class HtmlTable extends Writer {
+class HtmlTable extends Writer
+{
     public static $default_options = [
         'overwrite' => false,
         // a function that accepts the key and the value of the item to write and returns what to output (correctly escaped)
@@ -15,22 +16,26 @@ class HtmlTable extends Writer {
     
     private $outputfile = null;
     
-    public function __construct ($outputfile, $options = array()) {
+    public function __construct($outputfile, $options = array())
+    {
         $this->outputfile = $outputfile;
         $this->setOptions($options);
         
-        if ( !$this->getOption('overwrite') && file_exists($outputfile) ) {
+        if (!$this->getOption('overwrite') && file_exists($outputfile)) {
             throw new \Exception('Output file already exists: ' . $this->outputfile);
         }
     }
 
-    private function saveLines () {
+    private function saveLines()
+    {
         // prepare
 
-        $func = $this->getOption('transform') ? $this->getOption('transform') : function ($k, $v) { return htmlentities($v); };
+        $func = $this->getOption('transform') ? $this->getOption('transform') : function ($k, $v) {
+            return htmlentities($v);
+        };
         
         $fh = fopen($this->outputfile, 'w');
-        if ( !$fh ) {
+        if (!$fh) {
             throw new \Exception('Could not open output file: ' . $this->outputfile);
         }
 
@@ -43,10 +48,10 @@ class HtmlTable extends Writer {
         // repeat
 
         $numrow = 0;
-        while ( ($data = yield) !== null ) {
+        while (($data = yield) !== null) {
             $numrow += 1;
             
-            if ( $numrow == 1 ) {
+            if ($numrow == 1) {
                 $lines = [];
                 $lines[] = '<tr>';
                 foreach (array_keys($data) as $k) {
@@ -59,7 +64,7 @@ class HtmlTable extends Writer {
             $lines = [];
             $lines[] = '<tr>';
             foreach ($data as $k => $v) {
-            	$lines[] = "\t" . '<td>' . $func($k, $v) . '</td>';
+                $lines[] = "\t" . '<td>' . $func($k, $v) . '</td>';
             }
             $lines[] = '</tr>';
             fwrite($fh, implode("\n", $lines) . "\n");
@@ -71,7 +76,8 @@ class HtmlTable extends Writer {
         fclose($fh);
     }
     
-    protected function outputGenerator () {
+    protected function outputGenerator()
+    {
         return $this->saveLines();
     }
 }
