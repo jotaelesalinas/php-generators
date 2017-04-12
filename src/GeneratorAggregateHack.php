@@ -19,7 +19,7 @@ trait GeneratorAggregateHack
         }
     }
     
-    function __destruct()
+    public function __destruct()
     {
         $this->send(null);
     }
