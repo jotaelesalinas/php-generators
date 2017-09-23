@@ -3,19 +3,18 @@ namespace JLSalinas\RWGen;
 
 trait GeneratorAggregateHack
 {
+    protected $generator = null;
     public function send($value)
     {
-        static $generator = null;
-        
-        if ($generator === null) {
+        if ($this->generator === null) {
             if ($value === null) {
                 return;
             }
-            $generator = $this->getGenerator();
+            $this->generator = $this->getGenerator();
         }
-        $generator->send($value);
+        $this->generator->send($value);
         if ($value === null) {
-            $generator = null;
+            $this->generator = null;
         }
     }
     
