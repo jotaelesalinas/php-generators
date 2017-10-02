@@ -3,8 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Read/write generators in PHP.
@@ -67,7 +65,7 @@ If you discover any security related issues, please email DM [@jotaelesalinas](h
 - [ ] Improve tests code coverage
 - [ ] Add docblocks
 - [ ] Fill changelog
-- [ ] Travis-CI. WTF?
+- [x] Travis-CI
 - [ ] Use league/csv?
 
 ## Credits
@@ -82,14 +80,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://img.shields.io/packagist/v/jotaelesalinas/php-rwgen.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/jotaelesalinas/php-rwgen/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jotaelesalinas/php-rwgen.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jotaelesalinas/php-rwgen.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jotaelesalinas/php-rwgen.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jotaelesalinas/php-rwgen
 [link-travis]: https://travis-ci.org/jotaelesalinas/php-rwgen
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jotaelesalinas/php-rwgen/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jotaelesalinas/php-rwgen
 [link-downloads]: https://packagist.org/packages/jotaelesalinas/php-rwgen
 [link-author]: https://github.com/jotaelesalinas
 [link-contributors]: ../../contributors
