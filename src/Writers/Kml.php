@@ -20,6 +20,7 @@ class Kml extends Writer
 {
     public static $default_options = array (
         'overwrite' => false,
+        'func_folder' => false
     );
     
     private $outputfile = false;
@@ -61,6 +62,8 @@ class Kml extends Writer
         $restStyleNode->appendChild($restIconstyleNode);
         $docNode->appendChild($restStyleNode);
         
+        $folderNodes = [];
+        
         do {
             $row = yield;
             
@@ -71,7 +74,21 @@ class Kml extends Writer
             // Creates a Placemark and append it to the Document.
 
             $node = $dom->createElement('Placemark');
-            $placeNode = $docNode->appendChild($node);
+
+            $func_folder = $this->getOption('func_folder');
+            $folder = $func_folder ? $func_folder($row) : false;
+
+            if ( $folder === false ) {
+                $placeNode = $docNode->appendChild($node);
+            } else {
+                if ( !isset($folderNodes[$folder]) ) {
+                    $folderNodes[$folder] = $dom->createElement('Folder');
+                    $nameNode = $dom->createElement('name', $folder);
+                    $folderNodes[$folder]->appendChild($nameNode);
+                    $docNode->appendChild($folderNodes[$folder]);
+                }
+                $placeNode = $folderNodes[$folder]->appendChild($node);
+            }
 
             // Creates an id attribute and assign it the value of id column.
             $placeNode->setAttribute('id', 'placemark' . (isset($row['id']) ? $row['id'] : $row[ key($row) ]));
@@ -98,6 +115,8 @@ class Kml extends Writer
             $pointNode->appendChild($coorNode);
         } while ($row !== null);
 
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput = true;
         $kmlOutput = $dom->saveXML();
         file_put_contents($this->outputfile, $kmlOutput);
     }

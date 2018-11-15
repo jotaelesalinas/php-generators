@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <Style id="pinStyle">
+      <IconStyle id="pinIcon">
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>FL - CLAY COUNTY</name>
+      <Placemark id="placemark119736">
+        <name>119736</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.711777,30.102261</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark448094">
+        <name>448094</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.707664,30.063936</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark206893">
+        <name>206893</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.700455,30.089579</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - SUWANNEE COUNTY</name>
+      <Placemark id="placemark937659">
+        <name>937659</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.926659,29.959805</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark294022">
+        <name>294022</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.926659,29.959805</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark410500">
+        <name>410500</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.926659,29.959805</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - NASSAU COUNTY</name>
+      <Placemark id="placemark920232">
+        <name>920232</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.93397,30.39431</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark727659">
+        <name>727659</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.830429,30.56267</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark471817">
+        <name>471817</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.830429,30.56267</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - COLUMBIA COUNTY</name>
+      <Placemark id="placemark289305">
+        <name>289305</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.66227,30.105968</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark697409">
+        <name>697409</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.7094,30.1018</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark633944">
+        <name>633944</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.7094,30.1018</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - ST  JOHNS COUNTY</name>
+      <Placemark id="placemark934992">
+        <name>934992</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.4271,29.7917</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark645841">
+        <name>645841</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.4271,29.7917</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark747846">
+        <name>747846</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.4271,29.7917</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - BAKER COUNTY</name>
+      <Placemark id="placemark490641">
+        <name>490641</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.16215,30.265605</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark443968">
+        <name>443968</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.160875,30.27125</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark574531">
+        <name>574531</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.12209,30.28364</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - BRADFORD COUNTY</name>
+      <Placemark id="placemark178800">
+        <name>178800</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.202431,29.869762</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark406073">
+        <name>406073</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.135475,29.86261</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark450089">
+        <name>450089</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.135536,29.864408</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HAMILTON COUNTY</name>
+      <Placemark id="placemark135936">
+        <name>135936</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.95187,30.51869</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark997759">
+        <name>997759</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.95187,30.51869</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark470224">
+        <name>470224</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.95187,30.51869</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - UNION COUNTY</name>
+      <Placemark id="placemark591943">
+        <name>591943</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.3414,30.02339</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark973133">
+        <name>973133</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.3414,30.02339</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark743965">
+        <name>743965</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.33126,30.02756</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MADISON COUNTY</name>
+      <Placemark id="placemark669229">
+        <name>669229</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.30024,30.422401</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark766573">
+        <name>766573</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.30043,30.416973</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark765578">
+        <name>765578</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.298165,30.41388</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LAFAYETTE COUNTY</name>
+      <Placemark id="placemark346222">
+        <name>346222</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.175026,30.053045</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark827364">
+        <name>827364</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.1515,30.053065</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark865575">
+        <name>865575</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.1515,30.053065</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - FLAGLER COUNTY</name>
+      <Placemark id="placemark753749">
+        <name>753749</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.214096,29.671267</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark555590">
+        <name>555590</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.259552,29.469646</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark698118">
+        <name>698118</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.351645,29.48208</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - DUVAL COUNTY</name>
+      <Placemark id="placemark313002">
+        <name>313002</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.7709,30.3392</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark289820">
+        <name>289820</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.62899,30.245523</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark844263">
+        <name>844263</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.556931,30.36504</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LAKE COUNTY</name>
+      <Placemark id="placemark913315">
+        <name>913315</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.549945,29.16476</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark364546">
+        <name>364546</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.635239,29.16147</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark645395">
+        <name>645395</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.957458,28.952364</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - VOLUSIA COUNTY</name>
+      <Placemark id="placemark283068">
+        <name>283068</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.4211,29.1869</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark946537">
+        <name>946537</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.4211,29.1869</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark581607">
+        <name>581607</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.08162,29.17883</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - PUTNAM COUNTY</name>
+      <Placemark id="placemark916069">
+        <name>916069</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.51239,29.42329</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark628685">
+        <name>628685</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.51062,29.42566</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark993121">
+        <name>993121</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.51108,29.42554</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MARION COUNTY</name>
+      <Placemark id="placemark948611">
+        <name>948611</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.113304,29.411762</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark833869">
+        <name>833869</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.143478,29.352907</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark629107">
+        <name>629107</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.109848,29.426023</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - SUMTER COUNTY</name>
+      <Placemark id="placemark423872">
+        <name>423872</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.964424,28.958881</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark216610">
+        <name>216610</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.9935,28.9123</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark558984">
+        <name>558984</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.013092,28.92819</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LEON COUNTY</name>
+      <Placemark id="placemark835868">
+        <name>835868</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.28143,30.44103</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark214893">
+        <name>214893</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.252305,30.431065</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark649680">
+        <name>649680</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.252305,30.431065</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - FRANKLIN COUNTY</name>
+      <Placemark id="placemark481615">
+        <name>481615</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.985733,29.726414</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark906547">
+        <name>906547</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.985733,29.726414</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark748767">
+        <name>748767</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.985733,29.726414</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LIBERTY COUNTY</name>
+      <Placemark id="placemark485677">
+        <name>485677</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.99636,30.432535</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark677003">
+        <name>677003</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.97661,30.43059</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark105608">
+        <name>105608</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.990662,30.431595</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - GADSDEN COUNTY</name>
+      <Placemark id="placemark163684">
+        <name>163684</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.843307,30.70475</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark719955">
+        <name>719955</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.847839,30.703733</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark876995">
+        <name>876995</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.8177,30.6768</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - WAKULLA COUNTY</name>
+      <Placemark id="placemark436217">
+        <name>436217</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.371811,30.192354</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark137690">
+        <name>137690</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.37639,30.17664</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark364869">
+        <name>364869</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-84.37639,30.17664</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - JEFFERSON COUNTY</name>
+      <Placemark id="placemark549727">
+        <name>549727</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.870392,30.532766</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark271003">
+        <name>271003</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.9217,30.47566</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark814262">
+        <name>814262</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.872536,30.543957</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - TAYLOR COUNTY</name>
+      <Placemark id="placemark489930">
+        <name>489930</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.58924,30.12514</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark858457">
+        <name>858457</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.61212,30.18953</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark339167">
+        <name>339167</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.577179,30.120317</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - BAY COUNTY</name>
+      <Placemark id="placemark430900">
+        <name>430900</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.61912,30.16728</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark755749">
+        <name>755749</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.6523,30.1616</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark274616">
+        <name>274616</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.6523,30.1616</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - WALTON COUNTY</name>
+      <Placemark id="placemark670304">
+        <name>670304</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.03818,30.29516</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark807845">
+        <name>807845</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.01563,30.28023</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark711042">
+        <name>711042</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.148354,30.738146</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - JACKSON COUNTY</name>
+      <Placemark id="placemark518477">
+        <name>518477</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.398888,30.591803</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark562655">
+        <name>562655</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.393539,30.68038</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark316784">
+        <name>316784</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.400536,30.697214</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - CALHOUN COUNTY</name>
+      <Placemark id="placemark303809">
+        <name>303809</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.306862,30.521404</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark348892">
+        <name>348892</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.133278,30.585487</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark730950">
+        <name>730950</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.133278,30.585487</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HOLMES COUNTY</name>
+      <Placemark id="placemark110751">
+        <name>110751</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.697044,30.802887</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark215972">
+        <name>215972</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.644195,30.98982</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark254044">
+        <name>254044</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.644195,30.98982</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - WASHINGTON COUNTY</name>
+      <Placemark id="placemark182028">
+        <name>182028</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.7944,30.7356</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark307144">
+        <name>307144</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.81236,30.77203</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark970874">
+        <name>970874</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.814845,30.775665</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - GULF COUNTY</name>
+      <Placemark id="placemark997868">
+        <name>997868</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.282944,29.779392</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark358238">
+        <name>358238</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.394135,29.930834</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark451520">
+        <name>451520</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-85.300934,29.812447</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - ESCAMBIA COUNTY</name>
+      <Placemark id="placemark498099">
+        <name>498099</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.2229,30.4264</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark305181">
+        <name>305181</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.231728,30.441446</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark325705">
+        <name>325705</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.228806,30.441341</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - SANTA ROSA COUNTY</name>
+      <Placemark id="placemark700435">
+        <name>700435</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.0336,30.6027</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark659660">
+        <name>659660</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.0336,30.6027</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark227300">
+        <name>227300</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-87.0336,30.6027</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - OKALOOSA COUNTY</name>
+      <Placemark id="placemark850231">
+        <name>850231</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.680504,30.793554</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark498526">
+        <name>498526</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.680504,30.793554</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark717198">
+        <name>717198</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-86.680504,30.793554</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - ALACHUA COUNTY</name>
+      <Placemark id="placemark960418">
+        <name>960418</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.32349,29.65575</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark483647">
+        <name>483647</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.32355,29.65523</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark615347">
+        <name>615347</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.263229,29.831821</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - GILCHRIST COUNTY</name>
+      <Placemark id="placemark236192">
+        <name>236192</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.863327,29.755005</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark246882">
+        <name>246882</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.864563,29.755949</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark917616">
+        <name>917616</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.864563,29.755949</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LEVY COUNTY</name>
+      <Placemark id="placemark367269">
+        <name>367269</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.639488,29.449478</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark567443">
+        <name>567443</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.639488,29.449478</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark134515">
+        <name>134515</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.64339,29.44266</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - DIXIE COUNTY</name>
+      <Placemark id="placemark186005">
+        <name>186005</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.121498,29.637615</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark277120">
+        <name>277120</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.127235,29.63705</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark756839">
+        <name>756839</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-83.380341,29.665031</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - SEMINOLE COUNTY</name>
+      <Placemark id="placemark408207">
+        <name>408207</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.378355,28.660736</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark587161">
+        <name>587161</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.380115,28.660355</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark578298">
+        <name>578298</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.378441,28.660733</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - ORANGE COUNTY</name>
+      <Placemark id="placemark817319">
+        <name>817319</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.456421,28.636805</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark930249">
+        <name>930249</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.534576,28.653719</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark911805">
+        <name>911805</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.50861,28.67484</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - BREVARD COUNTY</name>
+      <Placemark id="placemark236140">
+        <name>236140</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.84816,28.671932</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark116135">
+        <name>116135</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.84816,28.671932</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark557938">
+        <name>557938</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.84656,28.66649</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - INDIAN RIVER COUNTY</name>
+      <Placemark id="placemark292898">
+        <name>292898</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.59289,27.76782</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark122107">
+        <name>122107</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.59289,27.76782</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark152377">
+        <name>152377</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.59289,27.76782</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MIAMI DADE COUNTY</name>
+      <Placemark id="placemark643388">
+        <name>643388</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.298653,25.866579</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark653270">
+        <name>653270</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.347954,25.888887</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark496080">
+        <name>496080</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.347954,25.888887</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - BROWARD COUNTY</name>
+      <Placemark id="placemark997789">
+        <name>997789</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.14513,26.05182</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark714575">
+        <name>714575</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.11114,26.09127</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark219244">
+        <name>219244</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.11114,26.09127</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MONROE COUNTY</name>
+      <Placemark id="placemark796192">
+        <name>796192</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.63551,24.91743</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark423775">
+        <name>423775</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.635651,24.915977</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark830141">
+        <name>830141</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.576637,24.956926</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - PALM BEACH COUNTY</name>
+      <Placemark id="placemark985870">
+        <name>985870</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.070671,26.694948</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark584816">
+        <name>584816</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.075729,26.6961</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark451513">
+        <name>451513</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.07231,26.69315</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MARTIN COUNTY</name>
+      <Placemark id="placemark135097">
+        <name>135097</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.6252,26.8881</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark846296">
+        <name>846296</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.6252,26.8881</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark808296">
+        <name>808296</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.14838,27.08053</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HENDRY COUNTY</name>
+      <Placemark id="placemark764485">
+        <name>764485</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.93615,26.756032</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark447502">
+        <name>447502</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-80.937134,26.75655</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark733746">
+        <name>733746</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.038615,26.75372</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - PASCO COUNTY</name>
+      <Placemark id="placemark643706">
+        <name>643706</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.35587,28.17128</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark558919">
+        <name>558919</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.195709,28.380785</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark254615">
+        <name>254615</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.18821,28.365255</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - GLADES COUNTY</name>
+      <Placemark id="placemark995482">
+        <name>995482</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.094437,26.83095</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark829482">
+        <name>829482</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.235935,26.89168</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark749979">
+        <name>749979</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.235935,26.89168</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HILLSBOROUGH COUNTY</name>
+      <Placemark id="placemark434701">
+        <name>434701</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.32669,27.94758</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark806601">
+        <name>806601</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.288429,27.938601</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark330166">
+        <name>330166</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.30529,27.94446</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HERNANDO COUNTY</name>
+      <Placemark id="placemark819921">
+        <name>819921</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.178169,28.500193</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark167086">
+        <name>167086</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.208,28.4307</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark123660">
+        <name>123660</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.37843,28.57721</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - PINELLAS COUNTY</name>
+      <Placemark id="placemark284559">
+        <name>284559</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.6376,27.77392</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark260623">
+        <name>260623</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.639763,27.772055</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark277148">
+        <name>277148</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.639763,27.772055</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - POLK COUNTY</name>
+      <Placemark id="placemark879470">
+        <name>879470</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.87836,28.01702</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark854249">
+        <name>854249</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.91217,28.012009</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark363589">
+        <name>363589</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.94994,28.03923</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - North Fort Myers</name>
+      <Placemark id="placemark508210">
+        <name>508210</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.468201,28.55302</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - Orlando</name>
+      <Placemark id="placemark975135">
+        <name>975135</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.468201,28.55302</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HIGHLANDS COUNTY</name>
+      <Placemark id="placemark918358">
+        <name>918358</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.514351,27.598238</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark461292">
+        <name>461292</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.50262,27.59344</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark317450">
+        <name>317450</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.502937,27.593521</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - HARDEE COUNTY</name>
+      <Placemark id="placemark995033">
+        <name>995033</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.825813,27.633209</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark580071">
+        <name>580071</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.824638,27.605719</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark363807">
+        <name>363807</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.8676,27.6233</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - MANATEE COUNTY</name>
+      <Placemark id="placemark418159">
+        <name>418159</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.051925,27.59524</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark397245">
+        <name>397245</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.123245,27.590239</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark411777">
+        <name>411777</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.452682,27.395073</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - OSCEOLA COUNTY</name>
+      <Placemark id="placemark741587">
+        <name>741587</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.52516,28.26627</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - LEE COUNTY</name>
+      <Placemark id="placemark466079">
+        <name>466079</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.8506,26.6306</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark620083">
+        <name>620083</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.898815,26.51875</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark454634">
+        <name>454634</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.8731,26.6256</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - CHARLOTTE COUNTY</name>
+      <Placemark id="placemark789877">
+        <name>789877</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.269,26.8311</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark495482">
+        <name>495482</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.269,26.8311</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark829269">
+        <name>829269</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.269,26.8311</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - COLLIER COUNTY</name>
+      <Placemark id="placemark461396">
+        <name>461396</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.794762,26.151865</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark392186">
+        <name>392186</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.794762,26.151865</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark374346">
+        <name>374346</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.801901,26.110603</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - SARASOTA COUNTY</name>
+      <Placemark id="placemark245161">
+        <name>245161</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.37187,26.983155</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark868716">
+        <name>868716</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.37187,26.983155</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark160755">
+        <name>160755</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.35779,26.95552</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - DESOTO COUNTY</name>
+      <Placemark id="placemark781179">
+        <name>781179</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.850571,27.211964</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark293199">
+        <name>293199</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-81.8638,27.21715</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark867911">
+        <name>867911</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.00203,27.23682</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>FL - CITRUS COUNTY</name>
+      <Placemark id="placemark407001">
+        <name>407001</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.625893,28.950718</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark885048">
+        <name>885048</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.58781,28.93222</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="placemark971153">
+        <name>971153</name>
+        <styleUrl>#pinStyle</styleUrl>
+        <Point>
+          <coordinates>-82.58781,28.93222</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
