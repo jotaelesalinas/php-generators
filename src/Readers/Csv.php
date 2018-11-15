@@ -44,10 +44,11 @@ class Csv extends Reader
         }
         
         $headers = false;
+
         while (!feof($fh)) {
             if ($headers === false && $this->getOption('with_headers')) {
                 $headers = fgetcsv($fh, 0, $this->getOption('separator'), $this->getOption('delimiter'), $this->getOption('escape'));
-                if (self::isEmptyArray($headers)) {
+                if (!$headers || self::isEmptyArray($headers)) {
                     if (feof($fh)) {
                         break;
                     }
@@ -56,7 +57,7 @@ class Csv extends Reader
             }
             
             $row = fgetcsv($fh, 0, $this->getOption('separator'), $this->getOption('delimiter'), $this->getOption('escape'));
-            if (self::isEmptyArray($row)) {
+            if (!$row || self::isEmptyArray($row)) {
                 if ($this->getOption('stop_on_blank')) {
                     break;
                 }
