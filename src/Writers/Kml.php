@@ -78,10 +78,10 @@ class Kml extends Writer
             $func_folder = $this->getOption('func_folder');
             $folder = $func_folder ? $func_folder($row) : false;
 
-            if ( $folder === false ) {
+            if ($folder === false) {
                 $placeNode = $docNode->appendChild($node);
             } else {
-                if ( !isset($folderNodes[$folder]) ) {
+                if (!isset($folderNodes[$folder])) {
                     $folderNodes[$folder] = $dom->createElement('Folder');
                     $nameNode = $dom->createElement('name', $folder);
                     $folderNodes[$folder]->appendChild($nameNode);
