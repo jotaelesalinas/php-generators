@@ -1,10 +1,13 @@
 <?php
-namespace JLSalinas\RWGen\Readers;
+namespace Generators\Readers;
 
-use JLSalinas\RWGen\Reader;
+use Generators\AbstractReader;
+use Generators\WithOptions;
 
-class Csv extends Reader
+class CsvReader extends AbstractReader
 {
+    use WithOptions;
+
     public static $default_options = array (
         'with_headers' => true,
         'separator' => ',',
@@ -15,7 +18,7 @@ class Csv extends Reader
     
     private $inputfile = false;
     
-    public function __construct($inputfile, $options = array())
+    public function __construct($inputfile, $options = [])
     {
         ini_set("auto_detect_line_endings", true);
         $this->inputfile = $inputfile;
@@ -31,7 +34,7 @@ class Csv extends Reader
         return count($array) == 1 && ( $array[0] === null || trim($array[0]) === '' );
     }
     
-    protected function inputGenerator()
+    protected function readerGenerator(): \Generator
     {
         return $this->getLines();
     }

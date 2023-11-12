@@ -1,7 +1,8 @@
 <?php
-namespace JLSalinas\RWGen\Writers;
+namespace Generators\Writers;
 
-use JLSalinas\RWGen\Writer;
+use Generators\AbstractWriter;
+use Generators\WithOptions;
 
 /*
  * Very basic KML file generator.
@@ -16,8 +17,10 @@ use JLSalinas\RWGen\Writer;
 // - add option with the default icon
 // - add parameter with closure to generate Placemark from row
 
-class Kml extends Writer
+class Kml extends AbstractWriter
 {
+    use WithOptions;
+
     public static $default_options = array (
         'overwrite' => false,
         'func_folder' => false
@@ -30,14 +33,12 @@ class Kml extends Writer
         $this->outputfile = $outputfile;
         $this->setOptions($options);
         
-        if (!$this->getOption('overwrite')) {
-            if (file_exists($outputfile)) {
-                throw new \Exception('Output file already exists: ' . $this->outputfile);
-            }
+        if (!$this->getOption('overwrite') && file_exists($outputfile)) {
+            throw new \Exception('Output file already exists: ' . $this->outputfile);
         }
     }
     
-    protected function outputGenerator()
+    protected function writerGenerator(): \Generator
     {
         // Creates the Document.
         $dom = new \DOMDocument('1.0', 'UTF-8');

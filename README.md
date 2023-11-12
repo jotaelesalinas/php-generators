@@ -15,23 +15,25 @@ The benefits of using this library are:
 - Use it easily in foreach loops (readers) or any other kind of loop (writers)
 - Unclutter your code by delegating the preparation and cleanup steps
 
+https://alanstorm.com/php-generators-from-scratch/
+
 ## Install
 
 Via Composer
 
 ```bash
-$ composer require jotaelesalinas/php-rwgen
+$ composer require jotaelesalinas/php-generators
 ```
 
 ## Usage
 
 ```php
-$input = new JLSalinas\RWGen\Readers\Csv($filename_customers);
+$input = new Generators\Readers\CsvReader($filename_customers);
 
-$output_csv = new JLSalinas\RWGen\Writers\Csv($filename_output . '.csv');
-$output_kml = new JLSalinas\RWGen\Writers\Kml($filename_output . '.kml');
+$output_csv = new Generators\Writers\CsvWriter($filename_output . '.csv');
+$output_kml = new Generators\Writers\Kml($filename_output . '.kml');
 
-foreach ( $input as $customer ) {
+foreach ($input as $customer) {
     // ...some filtering and transforming...
     $output_csv->send($customer_data);
     $output_kml->send($customer_geolocation_data);

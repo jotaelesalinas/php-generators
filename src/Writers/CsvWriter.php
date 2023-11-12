@@ -1,7 +1,8 @@
 <?php
-namespace JLSalinas\RWGen\Writers;
+namespace Generators\Writers;
 
-use JLSalinas\RWGen\Writer;
+use Generators\AbstractWriter;
+use Generators\WithOptions;
 
 // https://gist.github.com/johanmeiring/2894568
 if (!function_exists('str_putcsv')) {
@@ -22,8 +23,10 @@ if (!function_exists('str_putcsv')) {
     }
 }
 
-class Csv extends Writer
+class CsvWriter extends AbstractWriter
 {
+    use WithOptions;
+
     public static $default_options = array (
         'overwrite' => false,
         'with_headers' => true,
@@ -80,7 +83,7 @@ class Csv extends Writer
         fclose($fh);
     }
     
-    protected function outputGenerator()
+    protected function writerGenerator(): \Generator
     {
         $numfile = 1;
         $numlines = 0;

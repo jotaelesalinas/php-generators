@@ -1,13 +1,15 @@
 <?php
-namespace JLSalinas\RWGen\Writers;
+namespace Generators\Writers;
 
-use JLSalinas\RWGen\Writer;
+use Generators\AbstractWriter;
+use Generators\WithOptions;
 
-class HtmlTable extends Writer
+class HtmlTable extends AbstractWriter
 {
+    use WithOptions;
+
     public static $default_options = [
         'overwrite' => false,
-        // a function that accepts the key and the value of the item to write and returns what to output (correctly escaped)
         'transform' => false,
         'border' => '1',
         'padding' => '4',
@@ -26,58 +28,44 @@ class HtmlTable extends Writer
         }
     }
 
-    private function saveLines()
+    protected function writerGenerator(): \Generator
     {
-        // prepare
-
-        $func = $this->getOption('transform') ? $this->getOption('transform') : function ($k, $v) {
+        $transform = $this->getOption('transform') ? $this->getOption('transform') : function ($v) {
             return htmlentities($v);
         };
         
+        // prepare
         $fh = fopen($this->outputfile, 'w');
         if (!$fh) {
-            throw new \Exception('Could not open output file: ' . $this->outputfile);
+            throw new \Exception('Could not create output file: ' . $this->outputfile);
         }
 
         fwrite($fh, '<table ' .
             'border="' . $this->getOption('border') . '" ' .
             'cellpadding="' . $this->getOption('padding') . '" ' .
             'cellspacing="' . $this->getOption('spacing') . '" ' .
-            '>' . "\n");
+            '>' . PHP_EOL);
         
         // repeat
-
         $numrow = 0;
         while (($data = yield) !== null) {
             $numrow += 1;
             
             if ($numrow == 1) {
-                $lines = [];
-                $lines[] = '<tr>';
-                foreach (array_keys($data) as $k) {
-                    $lines[] = "\t" . '<th>' . htmlentities($k) . '</th>';
-                }
-                $lines[] = '</tr>';
-                fwrite($fh, implode("\n", $lines) . "\n");
+                $lines = array_map(fn($k) => '<th>' . htmlentities($k) . '</th>', array_keys($data));
+                array_unshift($lines, '<tr>');
+                array_push($lines, '</tr>');
+                fwrite($fh, implode(PHP_EOL . "\t", $lines) . PHP_EOL);
             }
             
-            $lines = [];
-            $lines[] = '<tr>';
-            foreach ($data as $k => $v) {
-                $lines[] = "\t" . '<td>' . $func($k, $v) . '</td>';
-            }
-            $lines[] = '</tr>';
-            fwrite($fh, implode("\n", $lines) . "\n");
+            $lines = array_map(fn($k) => '<td>' . $transform($k) . '</td>', $data);
+            array_unshift($lines, '<tr>');
+            array_push($lines, '</tr>');
+            fwrite($fh, implode(PHP_EOL . "\t", $lines) . PHP_EOL);
         }
         
         // clean-up
-
-        fwrite($fh, '</table>' . "\n");
+        fwrite($fh, '</table>' . PHP_EOL);
         fclose($fh);
-    }
-    
-    protected function outputGenerator()
-    {
-        return $this->saveLines();
     }
 }

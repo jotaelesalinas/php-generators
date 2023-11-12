@@ -1,5 +1,5 @@
 <?php
-namespace JLSalinas\RWGen;
+namespace Generators;
 
 /*
  * Crude attempt to mimic the IteratorAggregate interface.
@@ -14,6 +14,6 @@ namespace JLSalinas\RWGen;
  */
 interface GeneratorAggregate
 {
-    public function getGenerator();
-    public function send($value);
+    public function getGenerator(): \Generator;
+    public function send($value): void;
 }

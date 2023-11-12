@@ -1,25 +1,22 @@
 {
-    "name": "jotaelesalinas/php-rwgen",
+    "name": "jotaelesalinas/php-generators",
     "type": "library",
     "description": "Read/write generators in PHP",
     "keywords": [
-        "jotaelesalinas",
-        "jlsalinas",
-        "php-rwgen",
+        "php-generators",
         "php",
-        "rwgen",
+        "generators",
         "io",
         "read-write",
         "read",
         "write",
         "rw",
-        "generators",
         "input",
         "output",
         "producer",
         "consumer"
     ],
-    "homepage": "https://github.com/jotaelesalinas/php-rwgen",
+    "homepage": "https://github.com/jotaelesalinas/php-generators",
     "license": "MIT",
     "authors": [
         {
@@ -30,36 +27,28 @@
         }
     ],
     "require": {
-        "php": ">=5.5",
-        "league/csv": "^8.2"
+        "php": ">=8",
+        "league/csv": "^9.8"
     },
     "require-dev": {
-        "php" : ">=5.6",
-        "phpunit/phpunit" : "~4.0||~5.0",
-        "scrutinizer/ocular": "~1.1",
-        "squizlabs/php_codesniffer": "~2.3",
-        "phpunit/php-code-coverage": "^4"
+        "php": ">=8",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "JLSalinas\\RWGen\\": "src/"
+            "Generators\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JLSalinas\\RWGen\\Tests\\": "tests/"
+            "Generators\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "phpunit",
-        "format": "phpcbf --standard=psr2 src/",
+        "format": "phpcbf --standard=psr2 src/ tests/",
         "format-win": "phpcbf --standard=psr2 --no-patch src/",
         "smells": "phpcs --standard=psr2 src/"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
     },
     "config": {
         "sort-packages": true

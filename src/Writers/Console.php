@@ -1,11 +1,11 @@
 <?php
-namespace JLSalinas\RWGen\Writers;
+namespace Generators\Writers;
 
-use JLSalinas\RWGen\Writer;
+use Generators\AbstractWriter;
 
-class Console extends Writer
+class Console extends AbstractWriter
 {
-    protected function outputGenerator()
+    protected function writerGenerator(): \Generator
     {
         while (($data = yield) !== null) {
             print_r($data);
